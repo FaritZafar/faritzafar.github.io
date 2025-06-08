@@ -1,0 +1,132 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f8fafc;
+    color: #1f2937;
+    line-height: 1.8;
+    padding: 0;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(120deg, #1a1a1a, #3a8fd1);
+    color: white;
+    text-align: center;
+    padding: 60px 20px 40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  nav {
+    margin-top: 25px;
+  }
+  nav a {
+    margin: 0 14px;
+    color: #e0f2ff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  /* Section Layout */
+  section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 25px;
+  }
+  section h2 {
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 4px;
+    background-color: #1e90ff;
+    margin-top: 8px;
+    border-radius: 2px;
+  }
+  
+  /* List Blocks */
+  section ul {
+    list-style: none;
+    padding: 0;
+  }
+  section ul li {
+    background: #ffffff;
+    border-left: 4px solid #1e90ff;
+    padding: 18px 22px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s;
+  }
+  section ul li:hover {
+    transform: translateY(-4px);
+  }
+  section ul li strong {
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 6px;
+  }
+  
+  /* Paragraphs */
+  section p {
+    margin-bottom: 1em;
+  }
+  
+  /* Contact */
+  #contact a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  #contact a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background: #f1f5f9;
+    text-align: center;
+    padding: 25px 15px;
+    color: #475569;
+    font-size: 0.95rem;
+    border-top: 1px solid #cbd5e1;
+    margin-top: 80px;
+  }
+  
+  /* Responsive Enhancements */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2.4rem;
+    }
+    nav a {
+      display: inline-block;
+      margin: 10px 8px;
+    }
+    section {
+      padding: 0 15px;
+    }
+  }
+  
